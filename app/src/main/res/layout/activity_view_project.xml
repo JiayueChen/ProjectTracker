@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#6699ff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"          
+            android:gravity="center"
+            android:text="Project View"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:orientation="vertical" >
+
+         <TextView
+             android:id="@+id/textview_project_view_projectnumber"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="left"
+             android:text="Project Number:"
+             android:textSize="20sp" />
+
+         <TextView
+             android:id="@+id/textview_project_view_coursetitle"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="left"
+             android:text="Course Title:"
+             android:textSize="20sp" />
+
+         <TextView
+             android:id="@+id/textview_project_view_coursenumber"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="left"
+             android:text="Course Number:"
+             android:textSize="20sp" />
+
+         <TextView
+             android:id="@+id/textview_project_view_instructorname"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="left"
+             android:text="Instructor Name:"
+             android:textSize="20sp" />
+
+         <TextView
+             android:id="@+id/textview_project_view_duedate"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="left"
+             android:text="Due Date:"
+             android:textSize="20sp" />
+
+         <TextView
+             android:id="@+id/textview_project_view_projectdescription"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="left"
+             android:text="Project Description:"
+             android:textSize="20sp" />
+
+         <EditText
+             android:id="@+id/editText_project_view_projectdescription"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="0.77"
+             android:ems="10"
+             android:inputType="textMultiLine" />
+
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal" >
+
+             <Button
+                 android:id="@+id/button_project_view_edit"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="bottom"
+                 android:layout_marginLeft="3dp"
+                 android:layout_marginRight="3dp"
+                 android:layout_weight="1"
+                 android:background="#99cc33"
+                 android:text="Edit"
+                 android:textColor="#ffffff" />
+
+             <Button
+                 android:id="@+id/button_project_view_delete"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="bottom"
+                 android:layout_marginLeft="3dp"
+                 android:layout_marginRight="3dp"
+                 android:layout_weight="1"
+                 android:background="#99cc33"
+                 android:text="Delete"
+                 android:textColor="#ffffff" />
+
+             <Button
+                 android:id="@+id/button_project_view_tasks"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="bottom"
+                 android:layout_marginLeft="3dp"
+                 android:layout_marginRight="3dp"
+                 android:layout_weight="1"
+                 android:background="#99cc33"
+                 android:text="Tasks"
+                 android:textColor="#ffffff" />
+             
+              <Button
+                 android:id="@+id/button_project_view_Export"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="bottom"
+                 android:layout_marginLeft="3dp"
+                 android:layout_marginRight="3dp"
+                 android:layout_weight="1"
+                 android:background="#99cc33"
+                 android:text="Export"
+                 android:textColor="#ffffff" />
+             
+         </LinearLayout>
+     </LinearLayout>
+
+</LinearLayout>

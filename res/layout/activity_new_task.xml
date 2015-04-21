@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#6699ff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textview_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="New Task"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Task Desription"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/task_desription_EditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Date/Time"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/date_time_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="288dp"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+               android:background="#6699ff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" >
+
+                    <ListView
+                        android:id="@+id/listView_student"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                    </ListView>
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" >
+                    
+                       <ListView
+                        android:id="@+id/listView_task_schedule"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    >
+                    </ListView>
+                    
+                </LinearLayout>
+               
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+    
+    
+    
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"   
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">"
+
+         
+    <Button
+        android:id="@+id/button_addstudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        
+        android:background="#99cc33"
+        android:text="Add Student"
+        android:layout_weight="1"
+        android:textColor="#ffffff" />
+      <Button
+        android:id="@+id/button_addschedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#99cc33"
+          android:layout_weight="1"
+        android:text="Add Schedule"
+        android:textColor="#ffffff" />
+
+    </LinearLayout>
+    
+    
+    <Button
+        android:id="@+id/button_addtask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#99cc33"
+        android:text="Add"
+        android:textColor="#ffffff" />
+
+    
+
+</LinearLayout>
