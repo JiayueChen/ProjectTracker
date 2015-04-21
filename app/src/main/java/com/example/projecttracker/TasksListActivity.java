@@ -88,7 +88,7 @@ public class TasksListActivity extends Activity {
 	    
 }
 
-	 // ³¤°´²Ëµ¥ÏìÓ¦º¯Êý 
+	 // ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ 
 	 @Override 
    public boolean onContextItemSelected(MenuItem item) { 
         
@@ -140,16 +140,16 @@ public class TasksListActivity extends Activity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		menu.add(0, 0, 0, "New Task"); 
-		menu.add(0, 1, 0, "Inport Task"); 
+		menu.add(0, 1, 0, "Import Task");
 		return true;
 	}
 	
 	@Override  
-	// ²Ëµ¥±»Ñ¡ÖÐÊ±´¥·¢µÄÊÂ¼þ  
+	// ï¿½Ëµï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½  
 	public boolean onOptionsItemSelected(MenuItem item) {   
 	  switch(item.getItemId()) {
 	  case 0: 
-	   // ÉèÖÃActivityµÄTitle 
+	   // ï¿½ï¿½ï¿½ï¿½Activityï¿½ï¿½Title 
 		  Intent intent = new Intent();
 		  intent.setClass(TasksListActivity.this, NewTaskActivity.class);	
 		  intent.putExtra("project_id",project_id);  
@@ -167,7 +167,7 @@ public class TasksListActivity extends Activity {
 	      listview.setAdapter(new SimpleAdapter(this,
 					listData,
 	      android.R.layout.simple_list_item_2,new String[]{"task_desription", "description"},new int[]{android.R.id.text1, android.R.id.text2}));
-	      Toast.makeText(TasksListActivity.this, "Inport success!", Toast.LENGTH_SHORT).show();	
+	      Toast.makeText(TasksListActivity.this, "Import success!", Toast.LENGTH_SHORT).show();
 		   break; 	 
 	  }
 	  return true;  

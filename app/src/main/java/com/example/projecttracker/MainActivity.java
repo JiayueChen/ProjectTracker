@@ -148,7 +148,7 @@ public class MainActivity extends Activity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.	
 		 menu.add(0, 0, 0, "New Project"); 
-		 menu.add(0, 1, 0, "Inport Project");
+		 menu.add(0, 1, 0, "Import Project");
 		 menu.add(0, 2, 0, "about"); 
 		return true;
 	}
@@ -176,7 +176,7 @@ public class MainActivity extends Activity {
 	      listview.setAdapter(new SimpleAdapter(this,
 					listData,
 	      android.R.layout.simple_list_item_2,new String[]{"title", "description"},new int[]{android.R.id.text1, android.R.id.text2}));
-	      Toast.makeText(MainActivity.this, "Inport success!", Toast.LENGTH_SHORT).show();		
+	      Toast.makeText(MainActivity.this, "Import success!", Toast.LENGTH_SHORT).show();
 		  break;
 	  case 2: 
 		  AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this); 
@@ -283,7 +283,7 @@ public class MainActivity extends Activity {
      if (!dir2.exists()) {  
          try {  
              //在指定的文件夹中创建文件  
-             dir.createNewFile();  
+             dir2.createNewFile();
        } catch (Exception e) {  
        }  
    }  

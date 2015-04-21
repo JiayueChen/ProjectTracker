@@ -83,7 +83,7 @@ public class TaskViewActivity extends Activity {
 		task_view_listView_student.setAdapter(new ArrayAdapter<String>(TaskViewActivity.this, android.R.layout.simple_expandable_list_item_1,liststudentanme));               		        
 		task_view_listView_task_schedule.setAdapter(new ArrayAdapter<String>(TaskViewActivity.this, android.R.layout.simple_expandable_list_item_1,task_schedule_list));               		
 		
-		textview_task_view_taskdesription.setText("Task Desription:"+task.get("task_desription"));	
+		textview_task_view_taskdesription.setText("Task Description:"+task.get("task_desription"));
 		textview_task_view_datetime.setText("Date/Time:"+task.get("date_time"));
 			
 		button_task_view_edit.setOnClickListener(new OnClickListener() {
@@ -145,7 +145,7 @@ public class TaskViewActivity extends Activity {
 					e.printStackTrace();
 				}			
 //				map.put("task_id", listp.getTask_id());  
-//		        map.put("task_desription", listp.getTask_desription());  
+//		        map.put("task_description", listp.getTask_desription());
 //		        map.put("date_time", listp.getDate_time());  
 //		        map.put("list_of_student", listp.getList_of_student());  
 //		        map.put("project_id", listp.getProject_id());  

@@ -9,14 +9,14 @@
             android:layout_height="wrap_content"         
             android:textSize="20sp"
             android:gravity="center"
-            android:text="Name:xxxxxxxxx"       
+            android:text="Name:Jiayue Chen"
            />
 <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"            
             android:textSize="20sp"
               android:gravity="center"
-            android:text="Email:xxxxxxxxxx"
+            android:text="Email:jchen273@uottawa.ca"
           
            />
     
